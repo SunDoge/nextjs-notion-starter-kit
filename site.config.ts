@@ -10,8 +10,8 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  domain: 'pm-blog-notion.vercel.app',
+  author: 'Me',
 
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
