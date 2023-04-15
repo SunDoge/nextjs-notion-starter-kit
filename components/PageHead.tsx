@@ -21,81 +21,67 @@ export const PageHead: React.FC<
   const socialImageUrl = getSocialImageUrl(pageId) || image
 
   return (
-    <>
-      <Head>
-        <meta charSet='utf-8' />
-        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
-        <meta
-          name='viewport'
-          content='width=device-width, initial-scale=1, shrink-to-fit=no'
-        />
+    <Head>
+      <meta charSet='utf-8' />
+      <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+      <meta
+        name='viewport'
+        content='width=device-width, initial-scale=1, shrink-to-fit=no'
+      />
 
-        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fefffe" key="theme-color-light" />
-        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2d3439" key="theme-color-dark" />
+      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fefffe" key="theme-color-light" />
+      <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2d3439" key="theme-color-dark" />
 
-        <meta name='robots' content='index,follow' />
-        <meta property='og:type' content='website' />
+      <meta name='robots' content='index,follow' />
+      <meta property='og:type' content='website' />
 
-        {site && (
-          <>
-            <meta property='og:site_name' content={site.name} />
-            <meta property='twitter:domain' content={site.domain} />
-          </>
-        )}
+      {site && (
+        <>
+          <meta property='og:site_name' content={site.name} />
+          <meta property='twitter:domain' content={site.domain} />
+        </>
+      )}
 
-        {config.twitter && (
-          <meta name='twitter:creator' content={`@${config.twitter}`} />
-        )}
+      {config.twitter && (
+        <meta name='twitter:creator' content={`@${config.twitter}`} />
+      )}
 
-        {description && (
-          <>
-            <meta name='description' content={description} />
-            <meta property='og:description' content={description} />
-            <meta name='twitter:description' content={description} />
-          </>
-        )}
+      {description && (
+        <>
+          <meta name='description' content={description} />
+          <meta property='og:description' content={description} />
+          <meta name='twitter:description' content={description} />
+        </>
+      )}
 
-        {socialImageUrl ? (
-          <>
-            <meta name='twitter:card' content='summary_large_image' />
-            <meta name='twitter:image' content={socialImageUrl} />
-            <meta property='og:image' content={socialImageUrl} />
-          </>
-        ) : (
-          <meta name='twitter:card' content='summary' />
-        )}
+      {socialImageUrl ? (
+        <>
+          <meta name='twitter:card' content='summary_large_image' />
+          <meta name='twitter:image' content={socialImageUrl} />
+          <meta property='og:image' content={socialImageUrl} />
+        </>
+      ) : (
+        <meta name='twitter:card' content='summary' />
+      )}
 
-        {url && (
-          <>
-            <link rel='canonical' href={url} />
-            <meta property='og:url' content={url} />
-            <meta property='twitter:url' content={url} />
-          </>
-        )}
+      {url && (
+        <>
+          <link rel='canonical' href={url} />
+          <meta property='og:url' content={url} />
+          <meta property='twitter:url' content={url} />
+        </>
+      )}
 
-        <link
-          rel='alternate'
-          type='application/rss+xml'
-          href={rssFeedUrl}
-          title={site?.name}
-        />
+      <link
+        rel='alternate'
+        type='application/rss+xml'
+        href={rssFeedUrl}
+        title={site?.name}
+      />
 
-        <meta property='og:title' content={title} />
-        <meta name='twitter:title' content={title} />
-        <title>{title}</title>
-      </Head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-37DXM545PM"></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-37DXM545PM');
-          `
-        }}
-      ></script>
-    </>
+      <meta property='og:title' content={title} />
+      <meta name='twitter:title' content={title} />
+      <title>{title}</title>
+    </Head>
   )
 }
