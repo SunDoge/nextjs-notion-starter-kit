@@ -9,16 +9,16 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'pm-blog-notion.vercel.app',
-  author: 'Conlin',
+  name: "SunDoge's Blog",
+  domain: 'blog.betacat.tech',
+  author: 'SunDoge',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: "SunDoge's Blog",
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
-  // github: 'transitive-bullshit',
+  github: 'SunDoge',
   // linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
@@ -55,11 +55,11 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'About',
-      pageId: '0aac8edf47ab410eb06c0daacbbc7e2c'
+      pageId: '5d74d4bae06d4bedac041fe235921183'
     },
     {
       title: 'Contact',
-      pageId: 'd458cac4296f4e519ac5019cfdddb1bd'
+      pageId: '5d74d4bae06d4bedac041fe235921183'
     }
   ]
 })
