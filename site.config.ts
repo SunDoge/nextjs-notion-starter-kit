@@ -9,8 +9,8 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'pm-blog-notion.vercel.app',
+  name: "Conlin's Blog",
+  domain: 'conlin.betacat.tech',
   author: 'Conlin',
 
   // open graph metadata (optional)
